@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabTestDetailsActivity"
+    android:background="@drawable/back2"
+    android:alpha="0.85"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 X 7 Health Service"
+        android:id="@+id/homeTitle"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cartdelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deivery to Hyderabad"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cartpackname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test and Packages"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/gold"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/carteditTextTextMultiLine"
+        android:layout_width="344dp"
+        android:layout_height="376dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/carttotalcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text View"
+        android:textColor="@color/gold"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/cartdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Select date"
+        android:textColor="@color/gold" />
+
+    <Button
+        android:id="@+id/cartdatebtn"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartdate"
+        android:layout_marginTop="10dp"
+        android:text="06/03/2024" />
+
+
+    <TextView
+        android:id="@+id/carttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="258dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/cartdate"
+        android:text="Select Time"
+        android:textColor="@color/gold" />
+
+    <Button
+        android:id="@+id/carttimebtn"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carttime"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/cartdatebtn"
+        android:text="10:00" />
+
+    <Button
+        android:layout_below="@+id/cartdatebtn"
+        android:id="@+id/cartcheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckOut"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/cartback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carttimebtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="207dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/cartcheckout"
+        android:text="Back" />
+</RelativeLayout>
+
+</LinearLayout>
